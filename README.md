@@ -9,4 +9,5 @@ PyTorch implementations of Generative Adversarial Network series
 * InfoGAN([Paper](https://arxiv.org/pdf/1606.03657.pdf)|[Code](https://github.com/anhtuan85/GAN_series/blob/master/InfoGAN/infoGAN.py))
 * WGAN([Paper](https://arxiv.org/pdf/1701.07875.pdf)|[Notebook](https://github.com/anhtuan85/GAN_series/blob/master/WGAN.ipynb))
 * WGAN-GP([Paper](https://arxiv.org/pdf/1704.00028.pdf)|[Notebook](https://github.com/anhtuan85/GAN_series/blob/master/WGAN-GP.ipynb))
-* BEGAN ([Paper](https://arxiv.org/pdf/1703.10717.pdf)|Notebook)
+* BEGAN ([Paper](https://arxiv.org/pdf/1703.10717.pdf)|[Code](https://github.com/anhtuan85/GAN_series/tree/master/BEGAN))
+* EBGAN ([Paper](https://arxiv.org/abs/1609.03126)|Code)

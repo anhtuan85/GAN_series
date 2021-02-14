@@ -4,7 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class Generator(nn.Module):
-    def __init__(self, h, n, img_shape= img_shape):
+    def __init__(self, h, n, img_shape):
         super(Generator, self).__init__()
         self.n = n
         self.h = h
@@ -31,7 +31,7 @@ class Generator(nn.Module):
         return self.conv(fc_out)
 
 class Discriminator(nn.Module):
-    def __init__(self, h, n, img_shape= img_shape):
+    def __init__(self, h, n, img_shape):
         super(Discriminator, self).__init__()
         self.n = n
         self.h = h

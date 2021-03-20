@@ -26,3 +26,11 @@ def weights_init(m):
     if isinstance(m, nn.BatchNorm2d):
         torch.nn.init.normal_(m.weight, 0.0, 0.02)
         torch.nn.init.constant_(m.bias, 0)
+		
+def pullaway_loss(embeddings):
+    norm = torch.sqrt(torch.sum(embeddings ** 2, -1, keepdim=True))
+    normalized_emb = embeddings / norm
+    similarity = torch.matmul(normalized_emb, normalized_emb.transpose(1, 0))
+    batch_size = embeddings.size(0)
+    loss_pt = (torch.sum(similarity) - batch_size) / (batch_size * (batch_size - 1))
+    return loss_pt
